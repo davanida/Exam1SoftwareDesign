@@ -17,11 +17,12 @@ public class AccountTester {
         Account ac[]=new Account[500];
         Scanner sc=new Scanner(System.in);
         double bal = 0 ;
+        double minimumBal = 50;
         
         do{
             System.out.println("Please enter a starting amount, more than 50$");
             bal = sc.nextDouble();
-        } while(bal<50);
+        } while(bal<minimumBal);
         
         
         System.out.println("Please enter the unique user name:");
