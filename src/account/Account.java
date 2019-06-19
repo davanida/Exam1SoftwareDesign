@@ -23,6 +23,7 @@ public class Account {
         {
             balance=initialBalance;
             user=givenUser;
+            System.out.println("Account Created!");
             //Note that the initial balance must be greater than 50.       
         }
 
@@ -56,7 +57,10 @@ public class Account {
         {
             return interestRate;
         }
-
+        public double interestBalance(){
+            double intBalance = this.getBalance() * this.getInterestRate() + this.getBalance();
+            return intBalance;
+        }
     /**user is the read only field
      * @return the user
      */
